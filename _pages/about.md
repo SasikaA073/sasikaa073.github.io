@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: Electronic and Telecommunication Engineering Undergraduate
+subtitle: 
 
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
+  more_info: > 
     
 
 news: false # includes a list of news items

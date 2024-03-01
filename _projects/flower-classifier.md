@@ -3,6 +3,13 @@ title: "🌸 Flower Images Classifier"
 date: 2023-02-16T21:21:32+05:30
 draft: false
 tags : ['Python','PyTorch','Image-processing']
+
+layout: page
+description: a project with a background image and giscus comments
+img: assets/img/flower-classifier-bg.png
+importance: 1
+category: work
+giscus_comments: true
 ---
 
 >This is my final project in the AI programming with Python Nanodegree program by Udacity. You can find the complete project repository here.
