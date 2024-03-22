@@ -2,75 +2,159 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+    <header class="post-header">
+        <h1 class="post-title">
+            {% if site.title == 'blank' %}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+            {{ site.last_name }}
+            {% else %}
+            {{ site.title }}
+            {% endif %}
+        </h1>
+        <p class="desc">{{ page.subtitle }}</p>
+    </header>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
+    <article>
+        {% if page.profile %}
+        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+            {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
+            {% else %}
             {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px,
+            (min-width: 576px)
+            30vw, 95vw"{% endcapture %}
+            {%
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes
+            alt=page.profile.image
             cache_bust=true
-          %}
+            %}
+            {% endif %}
+            {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+            {% endif %}
+        </div>
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+
+
+
+
+        <div class="clearfix">{{ content }}</div>
+
+
+
+       
+        <!-- News -->
+        {% if page.news and site.announcements.enabled %}
+        <h2>
+            <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% include news.liquid limit=true %}
         {% endif %}
+
+        <!-- Latest posts -->
+        {% if page.latest_posts %}
+        <h2>
+            <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+        {% endif %}
+
+        <!-- Selected papers -->
+        {% if page.selected_papers %}
+        <h2>
+            <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+        {% endif %}
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+            <!-- Social -->
+            {% if page.social %}
+            <div class="social">
+                <div class="contact-icons">{% include social.liquid %}</div>
+
+                <div class="contact-note">{{ site.contact_note }}</div>
+            </div>
+            {% endif %}
+    </article>
+    <div class="container-fluid" style="">
+
+    <div class="row">
+        <div class="col">
+
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading pb-2">
+                        {% comment %} <b>UoM</b><br> {% endcomment %}
+                        {% comment %} July 2022 - Present {% endcomment %}
+                    </p>
+                    <a class="image is-96x144 text-decoration-none" target="_blank"
+                        href="https://uom.lk/">
+                        <img id="uom" height="100px"
+                            src="/assets/img/uom.png"  ></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+
+          
+
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading pb-2">
+                        {% comment %} <b>ENTC</b><br> {% endcomment %}
+                        {% comment %} July 2022 - Present {% endcomment %}
+                    </p>
+                    <a class="image is-96x144 text-decoration-none" target="_blank"
+                        href="https://ent.uom.lk/">
+                        <img id="entc" width="150px" style="padding-top: 25px !important;"
+                            src="https://ent.uom.lk/wp-content/uploads/2021/07/logo-entc-copy.png" ></a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col">
+
+        <div class="level-item has-text-centered">
+          <div>
+              <p class="heading pb-2">
+                  {% comment %} <b>IEEE SPS</b><br> {% endcomment %}
+                  {% comment %} July 2022 - Present {% endcomment %}
+                  {% comment %} "/assets/img/ieee-sps-uom.jpg" {% endcomment %}
+                  </p>
+              <a class="image is-96x144 text-decoration-none" target="_blank"
+                  href="https://edu.ieee.org/lk-uomsps/">
+                  <img id="ieee_sps" width="300px" style="padding-top: 10px !important;"
+                  
+                  src="https://edu.ieee.org/lk-uomsps/wp-content/uploads/sites/557/cropped-sps-web-banner-3.png">
+                      </a>
+          </div>
       </div>
-    {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
+        </div>
+    </div>
 
-    <!-- Latest posts -->
-    {% if page.latest_posts %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
+</div>
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-  </article>
 </div>

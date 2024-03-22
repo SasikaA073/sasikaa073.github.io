@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: /prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: > 
     
@@ -17,8 +17,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Trying to change pixels using lenses 
+<div class="magic">On a mission to change how camera see the world
+</div>
 
-I am an 2nd year Electronic and Telecommunication Engineering undergraduate at University of Moratuwa. I love working with data, signals including images.
+I am a 2nd year Electronic and Telecommunication Engineering undergraduate of [University of Moratuwa](https://uom.lk).My research interests are **Computational Photography** and **Computer Vision**.
 
-In my free time, I love going on photowalks. 
+During my free time, I like to go for photowalks and hiking. I regularly post my photos in my photography portfolio. You can find them [here](https://instagram.com/random_captures_of_my_life)
+
+I also currently serve as the Assistant Webmaster in [IEEE Signal Processing Society - University of Moratuwa Student Chapter](https://edu.ieee.org/lk-uomsps/). 
+
+  
