@@ -39,12 +39,15 @@ $max-content-width: {{ site.max_width }};
 }
 
 .magic {
-  animation: background-pan 2s linear infinite;
+  animation: background-pan 3s linear infinite;
 
   background: linear-gradient(
       to right,
       var(--purple),
       var(--violet), 
+      var(--pink),
+      var(--purple),
+      var(--violet),
       var(--pink),
       var(--purple)
       
@@ -53,4 +56,11 @@ $max-content-width: {{ site.max_width }};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
+}
+
+#navbar {
+  background-color: rgba(28, 28, 29,0.9) ;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  
 }

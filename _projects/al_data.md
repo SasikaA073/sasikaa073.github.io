@@ -26,7 +26,7 @@ This dataset contains information on the performance of students in the GCE Adva
 
 When a name of a school candidate is given, all the details including the birthday (which is not originally published on the exam result sheet) are given. **(About pretty much anyone from 2020 AL batch 😄)**
 
-<!-- {{<video src="/videos/search.mkv" controls="yes">}} -->
+
 
 ---
 ## Dataset Characteristics
