@@ -58,9 +58,3 @@ $max-content-width: {{ site.max_width }};
   white-space: nowrap;
 }
 
-#navbar {
-  background-color: rgba(28, 28, 29,0.9) ;
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  
-}

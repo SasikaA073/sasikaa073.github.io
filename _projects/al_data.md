@@ -1,17 +1,16 @@
 ---
 layout: page
 
-description: a project with a background image
-img: assets/img/12.jpg
+# img: assets/img/12.jpg
 importance: 1
 category: work
 related_publications: true
 
-title: "⚙️ Student Performance GCE AL Exam 2020 "
+title: "Student Performance Dataset"
 date: 2022-10-05T14:08:51+05:30
 draft: false
 tags : ['Python','Data-engineering','AWS VM']
-description : "This is far more the biggest and most favorite project of mine. Go through the project details.You might find this interesting. "
+description : "Dataset of results of candidates who sat for GCE AL (University Entrance Examination) containing  more than 300,000 records "
 ---
 
 
@@ -25,9 +24,6 @@ This dataset contains information on the performance of students in the GCE Adva
 >I have removed some columns of the original dataset due to ethical reasons. But here's a sample of the data when a search query is given.
 
 When a name of a school candidate is given, all the details including the birthday (which is not originally published on the exam result sheet) are given. **(About pretty much anyone from 2020 AL batch 😄)**
-
-
-
 ---
 ## Dataset Characteristics
 - The dataset consists of over 300,000 records of student performance in the GCE AL exam in Sri Lanka.
@@ -49,7 +45,7 @@ When a name of a school candidate is given, all the details including the birthd
 - This dataset can be used to identify the factors that contribute to the performance of students in the GCE AL exam and to make recommendations for improving student performance in the future.
 
 ## Usability
-- 9.12 / 10
+- 9.41 / 10
 
 ## Sources
 
@@ -68,7 +64,7 @@ I got a `bronze` 🥉 medal for this dataset with 36 upvotes in the Kaggle Commu
 
 > ⭐ This can be actually used to look after the academic likelihoods and whereabouts of Sri Lankan students' academics! Great job! -- [VISHESH THAKUR - Datasets Expert](https://www.kaggle.com/vishesh1412)
 
-> ⭐ This data could be used for EDA, visualization and even model development! Good work and great dataset! -- [RAVI RAMAKRISHNAN-NoTebooks Grandmaster](https://www.kaggle.com/ravi20076)
+> ⭐ This data could be used for EDA, visualization and even model development! Good work and great dataset! -- [RAVI RAMAKRISHNAN-Notebooks Grandmaster](https://www.kaggle.com/ravi20076)
 
 ## Github Link
 

@@ -109,25 +109,25 @@
           {% endfor %}
           
       <!-- Twitter -->
-        <li class="nav-item {% if page.permalink == '/twitter' %}active{% endif %}">
+        {% comment %} <li class="nav-item {% if page.permalink == '/twitter' %}active{% endif %}">
           <a class="nav-link" href="{{ 'https://twitter.com/SasikaA073' | relative_url }}" target="_blank">
-            {% comment %} <i class="fab fa-twitter"></i> {% endcomment %}
+            <!-- <i class="fab fa-twitter"></i> -->
             <i class="fab fa-x-twitter"></i>
             {% if page.permalink == '/twitter' %}
               <span class="sr-only">(current)</span>
             {% endif %}
           </a>
-        </li>
+        </li> {% endcomment %}
 
       <!-- Medium -->
-        <li class="nav-item {% if page.permalink == '/medium' %}active{% endif %}">
+        {% comment %} <li class="nav-item {% if page.permalink == '/medium' %}active{% endif %}">
           <a class="nav-link" href="{{ 'https://sasikaamarasinghe.medium.com/' | relative_url }}" target="_blank">
             <i class="fab fa-medium"></i>
             {% if page.permalink == '/medium' %}
               <span class="sr-only">(current)</span>
             {% endif %}
           </a>
-        </li>
+        </li> {% endcomment %}
 
       <!-- Github -->
       <li class="nav-item {% if page.permalink == '/github' %}active{% endif %}">
@@ -141,8 +141,8 @@
 
 
         <!-- dark mode toggle -->
-          {% if site.enable_darkmode %}
-{% comment %} Toogle theme mode {% endcomment %}
+        {% if site.enable_darkmode %}
+{% comment %} <-- Toogle theme mode --> {% endcomment %}
 <li class="toggle-container">
   <button id="light-toggle" title="Change theme">
     <i class="fa-solid fa-moon"></i>
@@ -150,9 +150,7 @@
     
   </button>
 </li>
-{% endif %} 
-
-
+{% endif %}  
 
         </ul>
       </div>

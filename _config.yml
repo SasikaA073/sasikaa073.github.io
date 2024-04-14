@@ -67,9 +67,9 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: SasikaA073 # your GitHub user name
 gitlab_username: # your GitLab user name
-x_username: SasikaA073 # your X handle
+x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: sasika-amarasinghe # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid:  # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -181,7 +181,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 6 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -353,6 +353,7 @@ imagemagick:
     - ".png"
     - ".tiff"
     - ".gif"
+    - ".webp"
   output_formats:
     webp: "-quality 85"
 
@@ -368,7 +369,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: false # enables google analytics
+enable_google_analytics: true # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
