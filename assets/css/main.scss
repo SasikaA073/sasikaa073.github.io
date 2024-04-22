@@ -58,3 +58,6 @@ $max-content-width: {{ site.max_width }};
   white-space: nowrap;
 }
 
+::-webkit-scrollbar {
+  display: none !important;
+}
