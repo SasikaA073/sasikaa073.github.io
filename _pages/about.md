@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 <div class="magic">On a mission to change how cameras see the world
 </div>
 
-I am a 2nd year Electronic and Telecommunication Engineering undergraduate of [University of Moratuwa](https://uom.lk).My research interests are **Computational Photography** and **Computer Vision**.
+I am a 2nd year Electronic and Telecommunication Engineering undergraduate of [University of Moratuwa](https://uom.lk). My research interests are **Deep Learning**, **Embedded Systems**, **Computer Vision**, and **Computational Photography**.
 
 During my free time, I like to go for photowalks and hiking. I regularly post my photos on my photography portfolio. You can find them [here](https://instagram.com/random_captures_of_my_life)
 
