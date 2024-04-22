@@ -26,6 +26,18 @@
                   <span id="{{ project.github_stars }}-stars"></span>
                 </span>
               {% endif %}
+
+            </div>
+          {% endif %}
+
+          {% if project.website %}
+
+            
+            <div class="github-icon">
+              <div class="icon" data-toggle="tooltip" title="Code Repository">
+                <a href="{{ project.website }}"><i class="fa-regular fa-globe"></i></a>
+              </div>
+
             </div>
           {% endif %}
         </div>

@@ -12,6 +12,7 @@ related_publications: false
 date: 2021-05-05T14:08:51+05:30
 draft: false
 tags : ['Python','Selenium']
+github: https://github.com/SasikaA073/instagram-bot-m
 ---
 
 ## 🌐 [Github repo](https://github.com/SasikaA073/twitter-post-bot-m)

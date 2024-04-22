@@ -7,7 +7,7 @@ img: assets/img/icliq/icliq_intro.jpg
 importance: 1
 category: work
 related_publications: false
-
+github: https://github.com/SasikaA073/EDP-iCliq-program
 
 date: 2023-10-05T14:08:51+05:30
 draft: false
@@ -24,6 +24,8 @@ tags : ['Arduino','ESP32','Embedded Systems', "Altium", "Solidworks"]
 </div>
 
 `iCliQ` is a a wearable clicker for public speakers and other professionals, developed by our team `Comany of Noobs` for the EN1190 : Engineering Design Project module in Semester 2 at the Electronic and Telecom. Engineering - University of Moratuwa.
+
+All the design files (Altium and Solidworks files), code, documentation, user manual is available in [github repository](https://github.com/SasikaA073/EDP-iCliq-program)
 
 <div class="row">
     <div ><center>
@@ -110,10 +112,11 @@ Both professional and amateur speakers often face challenges when it comes to ma
 
 ### 🔆 The Team - `Company of Noobs`
 
-- Odil Janandith
-- Sasika Amarasinghe
-- Sayuru Amugoda
-- Navindu De Silva
+- [Odil Janandith](https://lk.linkedin.com/in/odil-janandith-940a63166)
+- [Sasika Amarasinghe](https://lk.linkedin.com/in/sasika-amarasinghe)
+- [Sayuru Shenal Amugoda](https://lk.linkedin.com/in/sayuru-amugoda-289626276)
+- [Navindu De Silva](https://lk.linkedin.com/in/navindu-de-silva-6b0b7b219)
+
 
 Our project was selected for the finals of [HackX 2023](https://www.hackx.lk/)  Inter-University Startup Challenge organized by University of Kelaniya. 
 

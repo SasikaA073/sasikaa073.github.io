@@ -10,6 +10,7 @@ description: Finetuned model with backbone of VGG16 & Resnet to classify 102 cla
 importance: 1
 category: work
 giscus_comments: false
+github: https://github.com/SasikaA073/flower-classifier-m
 ---
 
 >This is my final project in the AI programming with Python Nanodegree program by Udacity. You can find the complete project repository here.

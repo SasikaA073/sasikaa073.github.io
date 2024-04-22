@@ -12,6 +12,7 @@ related_publications: false
 date: 2022-07-05T14:08:51+05:30
 draft: false
 tags : ['Python','Django']
+github: https://github.com/SasikaA073Unilink-social-media-platform-m
 ---
 
 This is a social media project that is developed using Django Framework as backend. Our main goal of this project was to build a platform to connect with other university students. This has similar funcionalities like other Social Media Platforms like Facebook.
