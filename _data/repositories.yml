@@ -2,20 +2,20 @@ github_users:
   - SasikaA073
 
 github_repos:
+  - mora-bprs/SAM-model
+  - SasikaA073/D2BGAN-m
+  - eigensharks/Eigensharks
+  
   - SasikaA073/gce-al-2020-public-dataset-m
   - SasikaA073/EDP-iCliq-program
   - SasikaA073/CDP-communication-system
-  - SasikaA073/packet-dissection-network-programming-m 
-  - SasikaA073/D2BGAN-m 
 
   - SasikaA073/Unilink-social-media-platform-m 
 
   - SasikaA073/pregma-ml-project-forks
   - SasikaA073/dog-breed-image-classifier
   - SasikaA073/arduino-pomodoro-alarm-m
-# https://github.com/SasikaA073/AIPND-udacity-assignment 
+  
   - SasikaA073/instagram-bot-m
-  - /SasikaA073/gce-al-2021-results-m
   - SasikaA073/twitter-post-bot-m
-  - eigensharks/Eigensharks
-  - SasikaA073/vision-system-bin-picking-robot-m
+  - SasikaA073/gce-al-2021-results-m

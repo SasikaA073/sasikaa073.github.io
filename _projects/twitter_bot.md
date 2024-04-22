@@ -1,8 +1,17 @@
 ---
+layout: page
+
 title: "🤖 Twitter Bot"
-date: 2022-02-05T19:55:21+05:30
+description: Automated bot to handle signing in and posting images in Twitter in given intervals using Selenium (Python)
+# img: assets/img/sp_cup_2024/sp_cup_denoising.png
+importance: 2
+category: fun
+related_publications: false
+
+
+date: 2021-05-05T14:08:51+05:30
 draft: false
-tags : ['Python','Selenium','Image-processing']
+tags : ['Python','Selenium']
 ---
 
 ## 🌐 [Github repo](https://github.com/SasikaA073/twitter-post-bot-m)

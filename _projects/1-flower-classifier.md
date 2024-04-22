@@ -1,5 +1,5 @@
 ---
-title: "Flower Images Classifier"
+title: "🌸 Flower Images Classifier"
 date: 2023-02-16T21:21:32+05:30
 draft: false
 tags : ['Python','PyTorch']

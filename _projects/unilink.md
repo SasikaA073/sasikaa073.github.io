@@ -1,8 +1,17 @@
 ---
+layout: page
+
 title: "🫂 Unilink Project - Social media platform"
-date: 2022-09-05T20:11:07+05:30
+description: A full stack webapp for community building developed using Django. This can be used for boilerplate for building any community
+# img: assets/img/sp_cup_2024/sp_cup_denoising.png
+importance: 2
+category: work
+related_publications: false
+
+
+date: 2022-07-05T14:08:51+05:30
 draft: false
-tags: ['Python','Django']
+tags : ['Python','Django']
 ---
 
 This is a social media project that is developed using Django Framework as backend. Our main goal of this project was to build a platform to connect with other university students. This has similar funcionalities like other Social Media Platforms like Facebook.

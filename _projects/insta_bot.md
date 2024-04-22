@@ -1,9 +1,17 @@
 ---
+layout: page
+
 title: "🤖 Instagram Bot"
-date: 2021-03-05T18:31:47+05:30
-draft: False
-tags: ['Python','Selenium']
-color : 'grey'
+description: Automated bot to handle signing in and messaging in given intervals in Instagram using Selenium (Python)
+# img: assets/img/sp_cup_2024/sp_cup_denoising.png
+importance: 2
+category: fun
+related_publications: false
+
+
+date: 2021-05-05T14:08:51+05:30
+draft: false
+tags : ['Python','Selenium']
 ---
 
 ![instagram-bot](https://www.bestproxyreviews.com/wp-content/uploads/2020/10/Best-Instagram-Bots.jpg)
