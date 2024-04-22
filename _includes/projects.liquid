@@ -13,7 +13,20 @@
       {% endif %}
       <div class="card-body">
         <h2 class="card-title text-lowercase">{{ project.title }}</h2>
+
+      
         <p class="card-text">{{ project.description }}</p>
+
+                    {% comment %} tags {% endcomment %}
+                    <div class="row ml-1 mr-1 p-0" style="font-size: 14px; color: #d2cece;">
+                      {% for tag in project.tags %}
+                          {{ tag }}
+                          {% if forloop.last == false %}
+                              •
+                          {% endif %}
+                      {% endfor %}
+                  </div>
+
         <div class="row ml-1 mr-1 p-0">
           {% if project.github %}
             <div class="github-icon">
@@ -30,17 +43,21 @@
             </div>
           {% endif %}
 
+          <span style="margin-right: 5px;"></span>
           {% if project.website %}
 
             
             <div class="github-icon">
               <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.website }}"><i class="fa-regular fa-globe"></i></a>
+                <a href="{{ project.website }}"><i class="fa-solid fa-globe"></i></a>
               </div>
 
             </div>
           {% endif %}
         </div>
+
+       
+
       </div>
     </div>
   </a>

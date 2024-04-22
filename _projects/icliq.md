@@ -4,7 +4,7 @@ layout: page
 title: "💡 iCliQ"
 description: a wearable clicker for public speakers and other professionals 
 img: assets/img/icliq/icliq_intro.jpg
-importance: 1
+importance: 3
 category: work
 related_publications: false
 github: https://github.com/SasikaA073/EDP-iCliq-program

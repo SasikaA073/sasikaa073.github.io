@@ -1,7 +1,7 @@
 ---
 title: "🧩 Website landing pages"
 date: 2021-12-05T20:54:56+05:30
-draft: false
+draft: true
 tags: ['Javascript','Vue','Angular']
 ---
 

@@ -7,7 +7,7 @@ tags : ['Python','PyTorch']
 layout: page
 description: Finetuned model with backbone of VGG16 & Resnet to classify 102 classes of flower images
 # img: assets/img/flower-classifier-bg.png
-importance: 1
+importance: 6
 category: work
 giscus_comments: false
 github: https://github.com/SasikaA073/flower-classifier-m

@@ -4,7 +4,7 @@ layout: page
 title: "🫂 Unilink Project - Social media platform"
 description: A full stack webapp for community building developed using Django. This can be used for boilerplate for building any community
 # img: assets/img/sp_cup_2024/sp_cup_denoising.png
-importance: 2
+importance: 4
 category: work
 related_publications: false
 
