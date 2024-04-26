@@ -4,7 +4,7 @@ layout: page
 title: 📡 Communication Design Project   
 description: Point-to-point wireless network developed using GNU Radio with Blade-RF and interfaced with Streamlit
 # img: assets/img/sp_cup_2024/sp_cup_denoising.png
-importance: 4
+importance: 1
 category: "Telecommunication"
 related_publications: false
 

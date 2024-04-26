@@ -4,7 +4,7 @@ layout: page
 title: "🤖 Twitter Bot"
 description: Automated bot to handle signing in and posting images in Twitter in given intervals using Selenium (Python)
 # img: assets/img/sp_cup_2024/sp_cup_denoising.png
-importance: 2
+importance: 3
 category: "Web Development"
 related_publications: false
 

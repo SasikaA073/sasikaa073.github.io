@@ -7,7 +7,7 @@ draft: false
 tags : ['Python','Data-engineering','AWS VM']
 description : "Dataset of results of candidates who sat for GCE AL (University Entrance Examination) containing  more than 300,000 records "
 
-website: "kaggle.com/datasets/sasikaamarasinghe/student-performance-gce-al-exam-2020-sri-lanka"
+website: https://kaggle.com/datasets/sasikaamarasinghe/student-performance-gce-al-exam-2020-sri-lanka
 
 # img: assets/img/12.jpg
 importance: 5
