@@ -3,9 +3,9 @@ layout: page
 
 title: "🔮 t-SNE visualizer for image data"  
 description: "Converts any image dataset into 2D t-SNE visualization"
-# img: assets/img/sp_cup_2024/sp_cup_denoising.png
-importance: 1
-category: ongoing
+img: assets/img/t_sne/withluke_color_1_t_sne_2000x_color.png
+importance: 2
+category: "Data + Machine Learning"
 related_publications: false
 
 date: 2024-04-15T14:08:51+05:30
@@ -26,14 +26,15 @@ This repository contains a Python package for visualizing high-dimensional data 
 - Save the visualizations as image files.
 
 # Gallery
+
 <div class="container">
   <div class="row">
     <div class="col">
-      {% include figure.liquid loading="eager" path="assets/img/t_sne/withluke_color_1_t_sne_2000x_color.png" title="Robovox dataset mic setup" class="img-fluid rounded z-depth-1" %}
+      {% include figure.liquid loading="eager" path="assets/img/t_sne/withluke_color_1_t_sne_2000x_color.png" title="Robovox dataset mic setup" class="img-fluid rounded " %}
       <div class="caption"><a href="https://www.instagram.com/withluke"><i class="fab fa-instagram"></i> withluke</a></div>
     </div>
     <div class="col">
-      {% include figure.liquid loading="eager" path="assets/img/t_sne/withluke_color_1_grid_56x55_2000px_t_sne.png" title="Robovox dataset mic setup" class="img-fluid rounded z-depth-1" %}
+      {% include figure.liquid loading="eager" path="assets/img/t_sne/withluke_color_1_grid_56x55_2000px_t_sne.png" title="Robovox dataset mic setup" class="img-fluid rounded " %}
       <div class="caption"><a href="https://www.instagram.com/withluke"><i class="fab fa-instagram"></i> withluke</a></div>
     </div>
   </div>

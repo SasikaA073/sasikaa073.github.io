@@ -5,7 +5,7 @@ title: "🤖 Instagram Bot"
 description: Automated bot to handle signing in and messaging in given intervals in Instagram using Selenium (Python)
 # img: assets/img/sp_cup_2024/sp_cup_denoising.png
 importance: 2
-category: fun
+category: "Web Development"
 related_publications: false
 
 

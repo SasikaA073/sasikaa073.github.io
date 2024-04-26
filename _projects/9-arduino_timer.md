@@ -4,8 +4,8 @@ layout: page
 title: "⏱️ Pomodoro Alarm"
 description: An alarm based on the Pomodoro Technique, dividing work into intervals signaled by melodies such as  Sweet Child of Mine and theme songs of Pirates of the Carribean , Game of Thrones.x
 # img: assets/img/sp_cup_2024/sp_cup_denoising.png
-importance: 1
-category: fun
+importance: 2
+category: "Hardware"
 related_publications: false
 
 

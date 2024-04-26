@@ -5,7 +5,7 @@ permalink: /projects/
 description: 
 nav: true
 nav_order: 3
-display_categories: [ongoing, work, fun]
+display_categories: ["Ongoing", "Data + Machine Learning", "Hardware", "Web Development", "Telecommunication"]
 horizontal: false
 ---
 
@@ -15,9 +15,13 @@ horizontal: false
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
+  
+
+  {% assign encoded_category = category | url_encode %}
+  <a id="{{ encoded_category }}" href="#{{ encoded_category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
+
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->

@@ -1,16 +1,18 @@
 ---
 layout: page
 
-# img: assets/img/12.jpg
-importance: 5
-category: work
-related_publications: true
-
 title: "📃 Student Performance Dataset"
 date: 2022-10-05T14:08:51+05:30
 draft: false
 tags : ['Python','Data-engineering','AWS VM']
 description : "Dataset of results of candidates who sat for GCE AL (University Entrance Examination) containing  more than 300,000 records "
+
+website: "kaggle.com/datasets/sasikaamarasinghe/student-performance-gce-al-exam-2020-sri-lanka"
+
+# img: assets/img/12.jpg
+importance: 5
+category: "Data + Machine Learning"
+related_publications: true
 ---
 
 
