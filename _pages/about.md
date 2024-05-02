@@ -24,6 +24,4 @@ I am a 2nd year Electronic and Telecommunication Engineering undergraduate of [U
 
 During my free time, I like to go for photowalks and hiking. I regularly post my photos on my photography portfolio. You can find them [here](https://instagram.com/random_captures_of_my_life)
 
-I also currently serve as the Assistant Webmaster in [IEEE Signal Processing Society - University of Moratuwa Student Chapter](https://edu.ieee.org/lk-uomsps/). 
-
-  
+I also currently serve as the Assistant Webmaster in [IEEE Signal Processing Society - University of Moratuwa Student Chapter](https://edu.ieee.org/lk-uomsps/).  

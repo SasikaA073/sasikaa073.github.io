@@ -33,11 +33,9 @@ github: https://github.com/SasikaA073/D2BGAN-m
 D2BGAN is a CycleGAN model that is designed to convert low light images to bright images. It is an unpaired GAN-based image enhancement operation that uses cycle consistency, geometric consistency, and illumination consistency. The model has been shown to provide competitive results on standard benchmark datasets, and it has been observed to perform well on DICM, LIME, and MEF datasets when D2BGAN was applied. However, it does not perform well on backlit images.
 
 
-<div class="row">
-    <div class="column">
+
         {% include figure.liquid loading="eager" path="assets/img/d2bgan/D2BGAN_architecture.png" title="D2BGAN Model Architecture" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+
 <div class="caption">
     D2BGAN Model Architecture
 </div>
