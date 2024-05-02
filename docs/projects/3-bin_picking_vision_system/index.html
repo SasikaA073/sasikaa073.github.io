@@ -232,7 +232,338 @@
   </header>
 
   <article>
-    <p>Please visit the <a href="https://mora-bprs.github.io/" rel="external nofollow noopener" target="_blank">Project Web Page</a> for this project.</p>
+    <p>Please visit the <a href="https://mora-bprs.github.io/" rel="external nofollow noopener" target="_blank">Project Web Page</a> for this project documentation. This website will be updated by 10th of June 2024 on the Evaluation Day with the detailed documentation.</p>
+
+<p>In this project, our assigned task was to <code class="language-plaintext highlighter-rouge">build a computer vision system to get the coordinates of a single box given an image using a segmentation method</code>.</p>
+
+<p>This task is a simplified version of <a href="https://en.wikipedia.org/wiki/Bin_picking" rel="external nofollow noopener" target="_blank">Bin Picking</a> which is a core problem in <code class="language-plaintext highlighter-rouge">computer vision</code> and <code class="language-plaintext highlighter-rouge">robotics</code>.</p>
+
+<hr>
+
+<h2 id="deeplab-model">DeepLab Model</h2>
+
+<p><a href="https://github.com/mora-bprs/DeepLab" rel="external nofollow noopener" target="_blank">Github</a></p>
+
+<p>In this first attempt, the team along with my group mate, Isiri Withanawasam was asked to refer to <code class="language-plaintext highlighter-rouge">Semantic Segmentation model : DeepLab</code> paper and implement the model for our application.</p>
+
+<p>Since the DeepLab model is not trained on any segmentation dataset which contains box images, a dataset of about 100 annotated images is created.</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="row">
+
+        <div class="col">
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/created_original_dataset-480.webp 480w,/assets/img/bin_picking/created_original_dataset-800.webp 800w,/assets/img/bin_picking/created_original_dataset-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/created_original_dataset.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Created dataset  " loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          <div class="caption">Created box image dataset </div>
+        </div>
+
+        <div class="col">
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/created_annotated_dataset-480.webp 480w,/assets/img/bin_picking/created_annotated_dataset-800.webp 800w,/assets/img/bin_picking/created_annotated_dataset-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/created_annotated_dataset.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Annotated dataset" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          <div class="caption">Annotated dataset</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Then the DeepLabV3 model was trained on our custom dataset using transfer learning. This is the result we got after 25 epochs.</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="row">
+
+        <div class="col">
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/sample_input_image-480.webp 480w,/assets/img/bin_picking/sample_input_image-800.webp 800w,/assets/img/bin_picking/sample_input_image-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/sample_input_image.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="sample_input_image " loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          <div class="caption">Sample input iamge</div>
+        </div>
+
+        <div class="col">
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/sample_output_image_transfer_learning-480.webp 480w,/assets/img/bin_picking/sample_output_image_transfer_learning-800.webp 800w,/assets/img/bin_picking/sample_output_image_transfer_learning-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/sample_output_image_transfer_learning.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="sample_output_image_transfer_learning.png:Zone" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          <div class="caption">Sample output image after finetuning DeepLabV3 model</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Since we were not satisfied with the results, we found the paper SAM model and moved onto using it according to the advice by our supervisor.</p>
+
+<hr>
+
+<h2 id="sam-model">SAM Model</h2>
+
+<p><a href="https://github.com/mora-bprs/SAM-model" rel="external nofollow noopener" target="_blank">Github</a></p>
+
+<p>Using this model (Segment Anything by MetaAI), we could get the desired output we were looking for. The results were taken in Google Colab using a  NVIDIA Tesla T4 GPU.</p>
+
+<!-- Add SAM model result here -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="row">
+
+        <div class="col">
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/sam_0-480.webp 480w,/assets/img/bin_picking/sam_0-800.webp 800w,/assets/img/bin_picking/sam_0-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/sam_0.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="sample_input_image " loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          <div class="caption">sample mask generated by SAM model</div>
+        </div>
+
+        <div class="col">
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/sam_box_1-480.webp 480w,/assets/img/bin_picking/sam_box_1-800.webp 800w,/assets/img/bin_picking/sam_box_1-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/sam_box_1.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="sample_output_image_transfer_learning.png:Zone" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          <div class="caption">Desired output from SAM model</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2 id="fast-sam-model">Fast SAM Model</h2>
+
+<p><a href="https://github.com/mora-bprs/SAM-model" rel="external nofollow noopener" target="_blank">Github</a></p>
+
+<p>Since we want a real time inference of the model, and our computation to happen on an edge device. Therefore we wanted to use the model with <code class="language-plaintext highlighter-rouge">Fast SAM</code>. With this model we could get the result even in  edge with less time using CPU compared to the SAM model sacrifising some accuracy and gaining advantage of inference time.</p>
+
+<!-- Add Fast SAM results here -->
+
+<h3 id="on-local-machine">On Local Machine</h3>
+<div class="row">
+    <div class="">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/fast_sam_on_local_pc-480.webp 480w,/assets/img/bin_picking/fast_sam_on_local_pc-800.webp 800w,/assets/img/bin_picking/fast_sam_on_local_pc-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/fast_sam_on_local_pc.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="local machine" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Fast SAM inference on Local Machine  (CPU - Intel i5 11 th Gen)
+</div>
+
+<h3 id="on-raspberry-pi-4b">On Raspberry PI 4B</h3>
+<div class="row">
+    <div class="">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/fast_sam_on_r_pi-480.webp 480w,/assets/img/bin_picking/fast_sam_on_r_pi-800.webp 800w,/assets/img/bin_picking/fast_sam_on_r_pi-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/fast_sam_on_r_pi.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="local machine" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Fast SAM inference on Raspeberry PI 4B (CPU - Broadcom BCM2711, Quad core Cortex-A72 (ARM v8))
+</div>
+
+<p>Note : The image in Raspberry Pi is not shown because, Ubuntu Server was running in the Raspberry Pi 4B with no GUI. That is the reason for QT error.</p>
+
+<h2 id="camera-integration--multithreading">Camera integration &amp; Multithreading</h2>
+
+<p>To decrease the time for inference we use multithreading to get input imags from the camera in one thread and buffer them. And do the computation in another thread to get the output. See the <a href="https://github.com/mora-bprs/SAM-model/commit/b53a6f067fee8f3dfa333111b9a9469a39de5e3d" rel="external nofollow noopener" target="_blank">latest commit</a> in <code class="language-plaintext highlighter-rouge">old</code> branch in the github repository. (not yet merged to main branch)</p>
+
+<hr>
+
+<h2 id="future-improvements">Future Improvements</h2>
+
+<p>By the time I am writing this, we have successfully completed the assigned task. As part of the hardware project we have created a custom gripper.</p>
+
+<p>After the evaluation day, we hope to integrate this vision system and the custom gripper with an industrial robot arm using ROS2, going the extra mile.</p>
+
+<p>We have already checked two robot arms available in our university’s Electrical Engineering Department. Here are those robot arms.</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="row">
+
+        <div class="col">
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/kuka_arm-480.webp 480w,/assets/img/bin_picking/kuka_arm-800.webp 800w,/assets/img/bin_picking/kuka_arm-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/kuka_arm.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="sample_input_image " loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          <div class="caption">Kuka KR 6 R900 sixx industrial robot arm</div>
+        </div>
+
+        <div class="col">
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/bin_picking/kinova_arm-480.webp 480w,/assets/img/bin_picking/kinova_arm-800.webp 800w,/assets/img/bin_picking/kinova_arm-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/bin_picking/kinova_arm.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="sample_output_image_transfer_learning.png:Zone" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          <div class="caption">Kinova Gen 2 robot arm </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Specifications of the above robot arms</p>
+
+<ul>
+  <li><a href="https://www.kuka.com/-/media/kuka-downloads/imported/8350ff3ca11642998dbdc81dcc2ed44c/0000205456_en.pdf" rel="external nofollow noopener" target="_blank">Kuka KR 6 R900 sixx industrial robot arm</a></li>
+  <li><a href="https://www.kinovarobotics.com/product/gen2-robots" rel="external nofollow noopener" target="_blank">Kinova Gen 2 robot arm</a></li>
+</ul>
+
 
   </article>
 
