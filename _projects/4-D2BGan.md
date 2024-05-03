@@ -21,8 +21,9 @@ github: https://github.com/SasikaA073/D2BGAN-m
     </div>
 </div>
 
-# Paper 
+[Github](https://github.com/SasikaA073/D2BGAN-m)
 
+# Paper 
 
 ### D2BGAN: A Dark to Bright Image Conversion Model for Quality Enhancement and Analysis Tasks Without Paired Supervision
 
