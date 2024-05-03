@@ -232,10 +232,34 @@
   </header>
 
   <article>
-    <p>Please visit “https://github.com/SasikaA073/smart-medibox-m” for more details. (Site under construction)</p>
+    <p>Please visit <a href="https://github.com/SasikaA073/smart-medibox-m" rel="external nofollow noopener" target="_blank">https://github.com/SasikaA073/smart-medibox-m</a> for more details. (Project is ongoing)</p>
 
 <hr>
-<p><img src="./repoBanner.png" alt="Banner"></p>
+<div class="row">
+    <div class="">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/medibox/smart_medibox-480.webp 480w,/assets/img/medibox/smart_medibox-800.webp 800w,/assets/img/medibox/smart_medibox-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/medibox/smart_medibox.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="icliq intro banner" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Smart Medibox  
+</div>
 
 <h1 id="smart-medibox">Smart Medibox</h1>
 
@@ -244,6 +268,8 @@
   <li>Remind the user to take medicine at time through alarms.</li>
   <li>Help to keep medicine in the required conditions via monitoring temperature and humidity continously and notifying the user if there is a bad condition.</li>
 </ol>
+
+<p>Note : IOT part of this project is to be implemented.</p>
 
 <h1 id="technologies-and-components">Technologies and Components</h1>
 
@@ -265,24 +291,11 @@ If the components change, you may have to change the parameters accordingly.
 	<code><img width="50" src="./192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="Visual Studio Code" title="Visual Studio Code"></code>
 	<code><img width="50" src="./192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png" alt="C++" title="C++"></code>
 	<code><img width="50" src="./274697405_404517471478609_1469547816363376057_n-removebg-preview.png" alt="Wokwi" title="Wokwi"></code>
-	<code><img width="50" src="./PlatformIO_logo.svg" alt="PlatformIO" title="UPlatformIO"></code>
 	<code><img width="50" src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/a57a85ba-e2dd-4036-85b6-7e1532391627" alt="Arduino" title="Arduino"></code>
 </div>
 
-<h2 id="platformini">platform.ini</h2>
-
-<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[env:esp32doit-devkit-v1]</span>
-<span class="py">platform</span> <span class="p">=</span> <span class="s">espressif32</span>
-<span class="py">board</span> <span class="p">=</span> <span class="s">esp32doit-devkit-v1</span>
-<span class="py">framework</span> <span class="p">=</span> <span class="s">arduino</span>
-<span class="py">lib_deps</span> <span class="p">=</span> 
-	<span class="s">adafruit/Adafruit GFX Library@^1.11.9</span>
-	<span class="err">adafruit/Adafruit</span> <span class="err">SSD1306@^2.5.9</span>
-	<span class="err">adafruit/DHT</span> <span class="err">sensor</span> <span class="err">library@^1.4.6</span>
-</code></pre></div></div>
-
 <ul>
-  <li>This was developed using VS Code with Arduino Framework.</li>
+  <li>This was developed using Vistual Studio Code with Arduino Framework.</li>
 </ul>
 
 <h1 id="getting-started">Getting Started</h1>
@@ -290,7 +303,7 @@ If the components change, you may have to change the parameters accordingly.
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
   <li>Git</li>
-  <li>Platform I/O with Arduino Framework Set up.</li>
+  <li>Arduino Framework Set up with Visual Studio Code</li>
   <li>
     <p>Relavant hardware for testing if you are not intended to do simulations.
 <br>
@@ -301,11 +314,8 @@ If the components change, you may have to change the parameters accordingly.
 <div class="highlight"><pre class="highlight"><code>git clone https://github.com/SasikaA073/smart-medibox-m     
 </code></pre></div>    </div>
   </li>
-  <li>Compile and Upload/Simulate.
-    <h2 id="configuration-and-structure">Configuration and Structure</h2>
-  </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">main.cpp</code> contains the arduino <em>loop()</em> and <em>setup()</em> functions.</p>
+    <p><code class="language-plaintext highlighter-rouge">main.ino</code> contains the arduino <em>loop()</em> and <em>setup()</em> functions.</p>
   </li>
   <li>The device code is developed in such a way that it’s actively listening(polling) for user inputs and for collecting sensor data from the DHT sensor.</li>
   <li>For an instance the three function calls in loop() function is responsible for,
@@ -325,38 +335,11 @@ If the components change, you may have to change the parameters accordingly.
 
 <h1 id="known-issues">Known issues</h1>
 
-<p>Currently there are no known issues. If there is any, please open an issue in the <code class="language-plaintext highlighter-rouge">issus</code> section with a relavant label.</p>
-
-<h1 id="screenshot-gallery">Screenshot Gallery</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"><img width="1604" alt="Gallery Image" src="./1.jpg"></th>
-      <th style="text-align: center"><img width="1604" alt="Gallery Image" src="./2.jpg"></th>
-      <th style="text-align: center"><img width="1604" alt="Gallery Image" src="./3.jpg"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center"><img width="1604" alt="Gallery Image" src="./4.jpg"></td>
-      <td style="text-align: center"><img width="1604" alt="Gallery Image" src="./5.jpg"></td>
-      <td style="text-align: center"><img width="1604" alt="Gallery Image" src="./6.jpg"></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><img width="1604" alt="Gallery Image" src="./7.jpg"></td>
-      <td style="text-align: center"><img width="1604" alt="Gallery Image" src="./8.jpg"></td>
-      <td style="text-align: center"><img width="1604" alt="Gallery Image" src="./9.jpg"></td>
-    </tr>
-  </tbody>
-</table>
+<p>Currently there are no known issues. If there is any, please open an issue in the <code class="language-plaintext highlighter-rouge">issues</code> section with a relavant label.</p>
 
 <h1 id="about">About</h1>
 
 <p>This project was first developed as the Semester 4 Project in the Module <code class="language-plaintext highlighter-rouge">EN2853 - Embedded Systems &amp; Applications</code></p>
-
-<p>Repository is inspired by this <a href="https://github.com/chathura-de-silva/Smart-Medibox" rel="external nofollow noopener" target="_blank">original Repository : chathura-de-silva/Smart-Medibox</a></p>
-
 
   </article>
 
