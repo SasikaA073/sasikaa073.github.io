@@ -5,7 +5,7 @@ permalink: /projects/
 description: 
 nav: true
 nav_order: 3
-display_categories: ["Ongoing", "Data + Machine Learning", "Hardware", "Web Development", "Telecommunication"]
+display_categories: ["Data + Machine Learning", "Hardware", "Web Development", "Telecommunication"] # "Ongoing", 
 horizontal: false
 ---
 

@@ -2,21 +2,19 @@
 layout: page
 
 title: 🤖🦾 Computer Vision System for Industrial Bin Picking Robot Arm 
-description: "Computer Vision System for Bin Picking Task using image Segmentation models such as SAM, DeepLab, Unet, Segnet and attempt to implement in an industrial robot arm using ROS"
+description: "Computer Vision System for Bin Picking Task using image Segmentation models such as SAM, DeepLab, Unet, Segnet and attempt to implement in an industrial robot arm"
 # img: assets/img/sp_cup_2024/sp_cup_denoising.png
 importance: 1
-category: Ongoing
+category: Data + Machine Learning
 related_publications: false
 
 date: 2022-10-05T14:08:51+05:30
 draft: false
-tags : ['ROS',"PyTorch", "Image Processing", "Edge Computing"]
+tags : ["PyTorch", "Image Processing", "Edge Computing"]
 github: https://github.com/mora-bprs/SAM-model
 website: https://mora-bprs.github.io/
 
 ---
-Please visit the [Project Web Page](https://mora-bprs.github.io/) for this project documentation. This website will be updated by 10th of June 2024 on the Evaluation Day with the detailed documentation. 
-
 In this project, our assigned task was to `build a computer vision system to get the coordinates of a single box given an image using a segmentation method`. 
 
 This task is a simplified version of [Bin Picking](https://en.wikipedia.org/wiki/Bin_picking) which is a core problem in `computer vision` and `robotics`. 
